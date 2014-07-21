@@ -7,3 +7,17 @@
 
 # Hint: use the value 0.02 to represent 2 percent,
 # and 0.04 to represent 4 percent.
+
+print('Welcome to the tax calculator!')
+price = float(input('Enter amount of purchase: '))
+print()
+
+state_tax = price * 0.02
+county_tax = price * 0.04
+total_tax = state_tax + county_tax
+total_price = price + state_tax + county_tax
+
+print('  State Tax: $', format(state_tax, '10,.2f'))
+print(' County Tax: $', format(county_tax, '10,.2f'))
+print('  Total Tax: $', format(total_tax, '10,.2f'))
+print('Total Price: $', format(total_price, '10,.2f'))
