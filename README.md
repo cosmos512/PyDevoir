@@ -1,4 +1,4 @@
 PyDevoir
 ========
 
-Homework as I follow a textbook and attempt to learn Python
+Homework as I follow various textbooks and attempt to learn Python
