@@ -10,3 +10,23 @@
 # The nutritionist asks you to write a program that will make these
 # calculations.
 
+def main():
+    # Get input
+    fat_cal = int(input('Enter amount of calories from fat: '))
+    carb_cal = int(input('Enter amount of calories from carbs: '))
+
+    # Fat calculator
+    fat_cal_calc(fat_cal)
+
+    # Carb calculator
+    carb_cal_calc(carb_cal)
+
+def fat_cal_calc(fat):
+    total = fat * 9
+    print('Calories from fat:', total)
+
+def carb_cal_calc(carb):
+    total = carb * 4
+    print('Calories from carbs:', total)
+
+main()

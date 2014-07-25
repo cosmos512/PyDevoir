@@ -5,4 +5,17 @@
 #                      BMI = weight * 703 / height^2
 # where weight is measured in pounds and height is measured in inches.
 
-# It's pretty broken, especially when used alone.
+# BMI usually stops after the first decimal.
+
+def main():
+    # Get Weight, Height
+    weight = float(input('Enter your weight in pounds: '))
+    height = float(input('Enter your height in inches: '))
+    # Calculate & Print
+    BMI_calculator(weight, height)
+
+def BMI_calculator(weight, height):
+    BMI = weight * 703 / height**2
+    print('Your BMI is:', format(BMI, '.1f'))
+
+main()
