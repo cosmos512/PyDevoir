@@ -15,7 +15,7 @@ def main():
     # Get the numbers and accumulate them.
     for counter in range(MAX):
         number = int(input('Enter a number: '))
-        total = total + number
+        total += number
 
     # Display the total of the numbers.
     print('The total is', total)
