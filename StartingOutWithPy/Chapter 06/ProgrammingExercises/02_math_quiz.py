@@ -11,3 +11,17 @@ def main():
     print('Let\'s add numbers!')
     print('What is the sum of...')
     
+    num1 = random.randint(1, 500)
+    num2 = random.randint(1, 500)
+    total = num1 + num2
+
+    print(num1, '+', num2, '?')
+    answer = int(input('Type your answer: '))
+
+    if answer == total:
+        print('Congratulation, that is the correct answer.')
+    else:
+        print('Wrong. The right answer is:')
+        print(total)
+
+main()
